@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Adi Pun – Junior Gameplay Programmer</title>
+  <title>Adi Pun - Junior Gameplay Programmer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
@@ -12,49 +12,151 @@
 <header class="header">
   <nav class="nav">
     <span class="logo">Adi Pun</span>
-    <div>
-      <a href="projects.html">Projects</a>
-      <a href="cv.html">CV</a>
-      <a href="contact.html">Contact</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
   <section class="hero fade">
     <h1>Junior Gameplay Programmer</h1>
     <p>
-      Custom in-house engines (C++) • Unity (C#) •  Gameplay Systems<br>
-      Commercial C++ experience
+      Commercial game development experience at Sumo Digital<br>
+      I focus on gameplay programming, creating engaging and responsive systems with code that is clear and easy for team members to work with.
     </p>
   </section>
 </header>
 
-<main class="content">
-  <section class="fade">
-    <h2>About</h2>
-    <p>
-      Level 7 Game Programmer Apprentice (Distinction) with commercial experience at
-      Sumo Digital. 
-      I focus on gameplay programming, creating engaging and responsive systems with code that is clear and easy for team members to work with.
-    </p>
-  </section>
+<main>
 
-  <section class="fade">
-    <h2>Featured</h2>
-    <div class="card">
-      <h3>NUTMEG! A Nostalgic Deckbuilding Football Manager</h3>
-      <p>
-        I worked as a junior programmer on this commercial game at Sumo Digital. 
-        
-        Within this role I created a dynamic sports news page generation system based on the exciting match outcomes of the week.
-        This was displayed on a CRT TV that I wrote a CRT effect material shader for in HLSL. I implemented a stadium upgrading and facility purchasing interface, this was 
-        data-driven with JSON saving/loading. I worked in an SCRUM workflow with multidisciplinary game development professionals such as environmental and technical artists, designers, writers and producers.
-        I created tools to improve workflow for non-programmers using Python's tkinter and imgui.
-        I used Perforce version control, Microsoft Azure DevOps for SCRUM and bugtracking and Miro and Confluence for documentation.
-      </p>
-      <a class="button" href="projects/nutmeg.html">View Project →</a>
-    </div>
-  </section>
+<!-- ABOUT -->
+<section id="about" class="content fade">
+  <h2>About Me</h2>
+  <p>
+    I am a Junior Gameplay Programmer with commercial experience working on a
+    shipping title at Sumo Digital. I have worked within SCRUM workflows as part
+    of multidisciplinary teams including designers, environmental and technical
+    artists, writers, producers, and other engineers.
+  </p>
+  <p>
+    I am comfortable working with professional production pipelines, using
+    Microsoft Azure DevOps for task tracking and bug management, Perforce for
+    version control, and Miro and Confluence for planning and technical
+    documentation.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="content">
+  <h2 class="fade">Featured Project</h2>
+
+  <!-- NUTMEG HIGHLIGHT -->
+  <div class="card fade">
+    <h3>NUTMEG! - Commercial Release</h3>
+    <p><strong>Junior Programmer - Sumo Digital</strong></p>
+
+    <p>
+      I worked as a Junior Programmer on <em>NUTMEG!</em>, a commercially releasing
+      game developed at Sumo Digital. My work focused on gameplay systems, tools,
+      and presentation features delivered within a professional studio
+      environment.
+    </p>
+
+    <ul>
+      <li>
+        Designed and implemented a <strong>dynamic sports news page generation
+        system</strong> that reacted to weekly match outcomes
+      </li>
+      <li>
+        Created a <strong>CRT TV material shader in HLSL</strong>, including
+        chromatic aberration, scanlines, vignette, and distortion effects
+      </li>
+      <li>
+        Implemented a <strong>stadium upgrading and facility purchasing UI</strong>,
+        built as a <strong>data-driven system</strong> with JSON saving/loading
+      </li>
+      <li>
+        Developed tools for non-programmers using <strong>Python (Tkinter)</strong>
+        and <strong>ImGui</strong>, improving iteration speed and workflow
+      </li>
+    </ul>
+
+    <p class="tech">
+      C++ • Python • HLSL • JSON • ImGui
+    </p>
+  </div>
+
+  <!-- OTHER PROJECTS -->
+  <h2 class="fade">Other Work</h2>
+
+  <div class="card fade">
+    <h3>Snake Party</h3>
+    <p>
+      Multiplayer party game developed for Sheffield Wednesday's halftime events using
+      <strong>Play3D</strong>, a custom in-house C++ engine.
+    </p>
+    <p>
+      Implemented gameplay logic, player interaction, scoring systems, and
+      state-driven game flow for a live production environment.
+    </p>
+    <p class="tech">C++ • Custom Engine • Gameplay Programming</p>
+  </div>
+
+  <div class="card fade">
+    <h3>Goblin Quest (Ludum Dare 57)</h3>
+    <p>
+      A goblin turn-based battler created in a 72-hour game jam.
+    </p>
+    <p class="tech">Unity • Gameplay Programming • Rapid Prototyping</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="content fade">
+  <h2>Skills</h2>
+  <p>
+    <strong>Gameplay & Systems:</strong> Gameplay systems, UI logic, state
+    machines, data-driven design, performance-aware programming
+  </p>
+  <p>
+    <strong>Engines & Languages:</strong> C++, Unreal Engine, custom in-house
+    engines, HLSL, Python
+  </p>
+  <p>
+    <strong>Production & Workflow:</strong> SCRUM, Azure DevOps, Perforce,
+    Miro, Confluence, Agile collaboration
+  </p>
+</section>
+
+<!-- QA experience -->
+<section id="qa" class="content fade">
+  
+ <h2 class="fade">QA Credits</h2>
+
+  <div class="card fade">
+    <h3>Still Wakes The Deep & Oil Strike '75</h3>
+    <p>
+      Tested areas of gameplay, identifying bugs and crashes and reporting them in Azure DevOps with clear repro steps, recreatability and severity.
+    </p>
+    <p class="tech">Microsoft Azure DevOps • Miro • Confluence</p>
+  </div>
+
+</section>
+  
+  
+<!-- CONTACT -->
+<section id="contact" class="content fade">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:adittyapun11@gmail.com">adittyapun11@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/AdiPun">github.com/AdiPun</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/adipun">linkedin.com/in/adipun</a></p>
+  <a class="button" href="Adi_Pun_CV.pdf" download>Download CV</a>
+</section>
+
 </main>
+
 
 </body>
 </html>
