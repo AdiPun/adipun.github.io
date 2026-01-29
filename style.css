@@ -26,6 +26,7 @@ body {
 .hero {
   margin-top: 4rem;
   max-width: 800px;
+  color: white
 }
 
 .hero h1 {
@@ -35,14 +36,14 @@ body {
 .content {
   max-width: 900px;
   margin: auto;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
 }
 
 .card {
   background: white;
   color: #222;
-  padding: 2rem;
-  margin-bottom: 3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
@@ -71,7 +72,7 @@ body {
 
 .footer {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   font-size: 0.8rem;
   color: #777;
 }
