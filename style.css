@@ -98,3 +98,15 @@ main {
   opacity: 1;
   transform: translateY(0);
 }
+
+.image-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-row img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+}
