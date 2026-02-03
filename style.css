@@ -1,20 +1,14 @@
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: #f1f5f9;
+  background: #fafafa;
   color: #111;
 }
 
-
-main {
-  background-color: #f8fafc;
-  padding: 4rem 2rem;
-}
-
-
 .header {
   padding: 3rem;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: linear-gradient(135deg, #111, #333);
   color: white;
 }
 
@@ -31,40 +25,20 @@ main {
 }
 
 .hero {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 4rem;
+  max-width: 800px;
+  color: white
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  max-width: 700px;
-  margin: 0.5rem auto;
-  line-height: 1.6;
-}
-
-.hero-contact a {
-  color: #38bdf8;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.hero-contact a:hover {
-  text-decoration: underline;
 }
 
 .content {
-  background: white;
-  padding: 3rem;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
 }
-
 
 .card {
   background: white;
@@ -108,7 +82,6 @@ main {
   color: #777;
 }
 
-/* Scroll animation */
 .fade {
   opacity: 0;
   transform: translateY(30px);
