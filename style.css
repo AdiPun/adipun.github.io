@@ -30,6 +30,7 @@ main {
 }
 
 .hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   margin-top: 4rem;
   max-width: 800px;
   color: white
