@@ -97,50 +97,102 @@
   <h2 class="fade">Featured Projects</h2>
 
   <!-- NUTMEG HIGHLIGHT -->
+<section id="projects" class="content">
+  <h2 class="fade">Featured Projects</h2>
+
+  <!-- NUTMEG HIGHLIGHT -->
   <div class="card fade">
     <h3><a href="https://store.steampowered.com/app/3590560/NUTMEG_A_Nostalgic_Deckbuilding_Football_Manager/">NUTMEG! - Commercial Release</a></h3>
     <p><strong>Junior Programmer - Sumo Digital</strong></p>
-  <img src="assets/nutmeg desk.jpg" alt="Screenshot from NUTMEG!" class="media">
+    <img src="assets/nutmeg desk.jpg" alt="Screenshot of desk from NUTMEG!" class="media">
     <p>
-      I worked as a Junior Programmer on <em>NUTMEG!</em>, a commercially releasing
-      game developed at Sumo Digital. My work focused on gameplay systems, tools,
-      and presentation features delivered within a professional studio
-      environment.
+      I worked as a Junior Programmer on <em>NUTMEG!</em>, a nostalgic football management game at Sumo Digital. 
+      One of my favourite parts of this project was building systems that brought the retro TV aesthetic to life 
+      while making life easier for our writers and artists:
     </p>
 
-    <ul>
-      <li>
-        Designed and implemented a <strong>dynamic sports news page generation
-        system</strong> that reacted to weekly match outcomes
-      </li>
-      <li>
-        Created a <strong>CRT TV material shader in HLSL</strong>, including
-        chromatic aberration, scanlines, vignette, and distortion effects
-      </li>
-      <li>
-        Implemented a <strong>stadium upgrading and facility purchasing UI</strong>,
-        built as a <strong>data-driven system</strong> with JSON saving/loading
-      </li>
-      <li>
-        Developed tools for non-programmers using <strong>Python (Tkinter)</strong>
-        and <strong>ImGui</strong>, improving iteration speed and workflow
-      </li>
-    </ul>
+    <h4>CRT TV Shader & Teletext System</h4>
+    <img src="assets/CRT.gif" alt="Gif of CRT from NUTMEG!" class="media">
+    <p>
+      I created a custom CRT shader in HLSL featuring chromatic aberration, animated scanlines, vignette, and pixelation. 
+      The goal was to nail that nostalgic 80s feel and really immerse players in the retro atmosphere.
+    </p>
+    <p>
+      I built a teletext rendering system that read actual TTI files and emulated them on surface materials. To keep memory usage down, I designed the system 
+      to create one template per style and dynamically overwrite it rather than storing multiple instances that we'd only see once. This was a balance between our target SteamDeck platform's performance vs memory.
+    </p>
+    <img src="assets/ScoreFlip.gif" alt="Gif of score clock from NUTMEG!" class="media">
+    <p>
+      I also implemented offscreen texture rendering for the flip-score clocks, which drew the correct number as the animation completed.
+      I used the offscreen texture to draw custom team colours on the clocks. This took the workload off the artists so they didn't have to create each clock's custom texture.
+    </p>
+
+    <h4>Python News Article Tool</h4>
+    <p>
+      I developed a Python tool using Tkinter to help our professional writers create in-game news articles quickly and 
+      efficiently. The UI let them create/edit/delete articles, input real-world dates (which auto-converted to our in-game calendar), 
+      and preview exactly how they'd appear in-game. This avoided editing the JSON directly or launching the game.
+    </p>
+    <p>
+      This streamlined the writing team's workflow and added built-in JSON validation. Articles were saved to a single JSON file in the correct directory that our TV system could read directly.
+    </p>
+
+    <h4>Dynamic Match Highlights System</h4>
+    <p>
+    <img src="assets/tv highlights.png" alt="Screenshot of teletext from NUTMEG!" class="media">
+      Using std::format, I created an algorithm that analysed weekly match results and intelligently categorised them 
+      (hat-tricks, big wins, promotion/relegation battles, close matches, nil-nils, etc.). I found that most of the matches were boring nil-nils so 
+      I made the system prioritise exciting types and limit each type to two features per week.
+    </p>
+    <p>
+      To further prevent staleness and repeated dialogue, each category had a pool of different headlines and body text that cycled through without 
+      repeating.
+    </p>
+
+    <h4>Data-Driven Stadium Leveling System</h4>
+    <p>
+      <img src="assets/stadium.png" alt="Screenshot of stadium from NUTMEG!" class="media">
+      I built a stadium upgrade system where stands and facilities change as the player levels up. It is fully data-driven through JSON and CSV configuration to avoid hardcoding 
+      which assets appear at which levels.
+    </p>
+    <p>
+      I made all stadium assets load upfront and only become visible when within their configured level range. I chose this approach 
+      as it preserves memory contiguity and avoids frequent runtime memory allocation and deletion.
+    </p>
+    <p>
+      I set this up so our environmental artist could edit the JSON directly and add their modular assets. I also 
+      recommended that they bake local transformation offsets into the assets themselves since the stadium doesn't move. This saved 
+      us from tedious transformation adjustments later.
+    </p>
+
+    <h4>Stadium Preview Tool (ImGui)</h4>
+    <p>
+      To help our environmental artist visualise how facility slots and buildings would look at different stadium levels, 
+      I created an ImGui debug command that let them cycle through all levels instantly. This streamlined the workflow for everyone who was working on stadium levelling.
+    </p>
+
+    <h4>Facilities & Leveling Progression</h4>
+    <p>
+      <img src="assets/Facilities.png" alt="Screenshot of facility purchasing from NUTMEG!" class="media">
+      Working closely with our designer and director, I implemented the facilities purchasing system, where players unlock 
+      more slots as they level up their stadium. Players can buy levels and facilities once per week, with a tier-up 
+      available every 5 levels, between seasons. This created a nice sense of progression tied to the core game loop.
+    </p>
   </div>
+</section>
 
     <div class="card fade">
     <h3><a href="https://www.sumo-digital.com/sumo-digital-academy-create-a-halftime-hit-for-sheffield-wednesday-football-club/">Snake Party</a></h3>
      <img src="assets/snake.png" alt="Screenshot from Snake Party" class="media">
       <p>
-      I developed gameplay systems for this multiplayer party game developed for Sheffield Wednesday's halftime events using
+      I developed gameplay systems for this multiplayer party game developed for Sheffield Wednesday's halftime events, using
       <strong>Play3D</strong>, a custom in-house C++ engine.
     </p>
       <ul>
       <li>Developed a juicy and satisfying orb-eating animation mechanic with easings and lerps</li>
         <li> Implemented exciting orb loss animation </li>
         <li> Created a suspenseful score reveal section with popping UI and audio, slowing down near the end for tension</li>
-        <li> Implemented gameplay logic, player interaction, scoring systems and
-      state-driven game flow</li>
+        <li> Implemented gameplay logic, player interaction, scoring systems and  state-driven game flow</li>
       </ul>
   </div>
 
