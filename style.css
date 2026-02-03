@@ -1,16 +1,14 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: #f1f5f9;
+  background: #fafafa;
   color: #111;
 }
-
 
 main {
   background-color: #f8fafc;
   padding: 4rem 2rem;
 }
-
 
 .header {
   padding: 3rem;
