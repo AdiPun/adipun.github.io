@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Adi Pun - Junior Gameplay Programmer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
+
 <body>
 
 <header class="header">
@@ -20,228 +22,215 @@
     </div>
   </nav>
 
-
-<section class="hero">
-<h1>Hi, I’m Adi Pun</h1>
-<p>
-  I'm a passionate and professional Gameplay & Tools Programmer with commercial experience at Sumo Digital.<br>
-  I enjoy building clear gameplay systems and creating tools that optimise workflow.
-</p>
-<p class="hero-contact">
-  Got an interesting project or role? 
-  <a href="mailto:adittyapun11@gmail.com">Get in touch</a>
-</p>
-</section>
+  <section class="hero">
+    <h1>Hi, I’m Adi Pun</h1>
+    <p>
+      I'm a passionate and professional Gameplay & Tools Programmer with commercial experience at Sumo Digital.<br>
+      I enjoy building clear gameplay systems and creating tools that optimise workflow.
+    </p>
+    <p class="hero-contact">
+      Got an interesting project or role?
+      <a href="mailto:adittyapun11@gmail.com">Get in touch</a>
+    </p>
+  </section>
 </header>
-
 
 <main>
 
-<!-- ABOUT -->
-<section id="about" class="content fade">
-  <h2>About Me</h2>
+  <!-- ABOUT -->
+  <section id="about" class="content fade">
+    <h2>About Me</h2>
 
-<p>
-  I’m a Junior Gameplay & Tools Programmer with commercial experience working on a
-  shipping title at Sumo Digital.
-</p>
-
-<p>
-  I completed a Level 7 Game Programming apprenticeship with Distinction and have
-  experience working in professional SCRUM environments alongside designers,
-  artists, writers, producers, and engineers.
-</p>
-
-<p>
-  My work focuses on gameplay systems, UI, tools, and presentation features,
-  with an emphasis on data-driven design and maintainable code. I’ve contributed
-  to both player-facing features and internal tools that improve iteration speed
-  for non-programmers.
-</p>
-
-<p>
-  I’m comfortable working within established studio pipelines, using Perforce
-  for version control, Microsoft Azure DevOps for task tracking and bug reporting,
-  and Miro and Confluence for documentation and planning.
-</p>
-
-<p>
-  Outside of work, I enjoy game jams, woodworking, and writing DND one-shots.
-</p>
-
-</section>
-<!-- SKILLS -->
-<section id="skills" class="content fade">
-<h2>Skills</h2>
-  
-  <div class="card fade">
-<h3>Languages</h3>
-<p>
-  C++ | Python | C# | HLSL
-</p>
-
-<h3>Engines / Frameworks</h3>
-<p>
-  Unity | Unreal 5 | Custom In-House Engines (Play3D) | Playbuffer
-</p>
-
-<h3>Tools</h3>
-<p>
-  Perforce | GitHub | Microsoft Azure DevOps | Miro | Confluence | RenderDoc | Vtune | PIX
-</p>
-  
-<h3>Fields</h3>
-<p>
-  Gameplay | Tools | UI Systems | Engine | Optimisation
-</p>
-  </div>
-</section>
-  
-<!-- PROJECTS -->
-<section id="projects" class="content">
-  <h2 class="fade">Featured Projects</h2>
-
-  <!-- NUTMEG HIGHLIGHT -->
-  <div class="card fade">
-    <h3><a href="https://store.steampowered.com/app/3590560/NUTMEG_A_Nostalgic_Deckbuilding_Football_Manager/">NUTMEG! - Commercial Release</a></h3>
-    <img src="assets/nutmeg desk.jpg" alt="Screenshot of desk from NUTMEG!" class="media">
     <p>
-      I worked as a Junior Programmer on <em>NUTMEG!</em>, a nostalgic football management game at Sumo Digital. 
-      One of my favourite parts of this project was building systems that brought the retro TV aesthetic to life 
-      while making life easier for our writers and artists:
+      I’m a Junior Gameplay & Tools Programmer with commercial experience working on a
+      shipping title at Sumo Digital.
     </p>
 
-    <h4>CRT TV Shader & Teletext System</h4>
-    <img src="assets/CRT.gif" alt="Gif of CRT from NUTMEG!" class="media">
     <p>
-      I created a custom CRT shader in HLSL featuring chromatic aberration, animated scanlines, vignette, and pixelation. 
-      The goal was to nail that nostalgic 80s feel and really immerse players in the retro atmosphere.
-    </p>
-    <p>
-      I built a teletext rendering system that read actual TTI files and emulated them on surface materials. To keep memory usage down, I designed the system 
-      to create one template per style and dynamically overwrite it rather than storing multiple instances that we'd only see once. This was a balance between our target SteamDeck platform's performance vs memory.
-    </p>
-    <img src="assets/ScoreFlip.gif" alt="Gif of score clock from NUTMEG!" class="media">
-    <p>
-      I also implemented offscreen texture rendering for the flip-score clocks, which drew the correct number as the animation completed.
-      I used the offscreen texture to draw custom team colours on the clocks. This took the workload off the artists so they didn't have to create each clock's custom texture.
+      I completed a Level 7 Game Programming apprenticeship with Distinction and have
+      experience working in professional SCRUM environments alongside designers,
+      artists, writers, producers, and engineers.
     </p>
 
-    <h4>Python News Article Tool</h4>
     <p>
-      <img src="assets/python tool.jpeg" alt="Screenshot of python news article tool from NUTMEG!" class="media">
-      I developed a Python tool using Tkinter to help our professional writers create in-game news articles quickly and 
-      efficiently. The UI let them create/edit/delete articles, input real-world dates (which auto-converted to our in-game calendar), 
-      and preview exactly how they'd appear in-game. This avoided editing the JSON directly or launching the game.
+      My work focuses on gameplay systems, UI, tools, and presentation features,
+      with an emphasis on data-driven design and maintainable code. I’ve contributed
+      to both player-facing features and internal tools that improve iteration speed
+      for non-programmers.
     </p>
+
     <p>
-      This streamlined the writing team's workflow and added built-in JSON validation. Articles were saved to a single JSON file in the correct directory that our TV system could read directly.
+      I’m comfortable working within established studio pipelines, using Perforce
+      for version control, Microsoft Azure DevOps for task tracking and bug reporting,
+      and Miro and Confluence for documentation and planning.
     </p>
 
-    <h4>Dynamic Match Highlights System</h4>
     <p>
-    <img src="assets/hat trick.jpeg" alt="Screenshot of teletext from NUTMEG!" class="media">
-      Using std::format, I created an algorithm that analysed weekly match results and intelligently categorised them 
-      (hat-tricks, big wins, promotion/relegation battles, close matches, nil-nils, etc.). I found that most of the matches were boring nil-nils so 
-      I made the system prioritise exciting types and limit each type to two features per week.
+      Outside of work, I enjoy game jams, woodworking, and writing DND one-shots.
     </p>
-    <p>
-      To further prevent staleness and repeated dialogue, each category had a pool of different headlines and body text that cycled through without 
-      repeating.
-    </p>
+  </section>
 
-    <h4>Data-Driven Stadium Leveling System</h4>
-    <p>
-      <img src="assets/stadium.png" alt="Screenshot of stadium from NUTMEG!" class="media">
-      I built a stadium upgrade system where stands and facilities change as the player levels up. It is fully data-driven through JSON and CSV configuration to avoid hardcoding 
-      which assets appear at which levels.
-    </p>
-    <p>
-      I made all stadium assets load upfront and only become visible when within their configured level range. I chose this approach 
-      as it preserves memory contiguity and avoids frequent runtime memory allocation and deletion.
-    </p>
-    <p>
-      I set this up so our environmental artist could edit the JSON directly and add their modular assets. I also 
-      recommended that they bake local transformation offsets into the assets themselves since the stadium doesn't move. This saved 
-      us from tedious transformation adjustments later.
-    </p>
+  <!-- SKILLS -->
+  <section id="skills" class="content fade">
+    <h2>Skills</h2>
 
-    <h4>Stadium Preview Tool (ImGui)</h4>
-    <p>
-      <img src="assets/imgui tool.jpeg" alt="Screenshot of facilty preview ImGui tool from NUTMEG!" class="media">
-      To help our environmental artist visualise how facility slots and buildings would look at different stadium levels, 
-      I created an ImGui debug command that let them cycle through all levels instantly. This streamlined the workflow for everyone who was working on stadium levelling.
-    </p>
+    <div class="card">
+      <h3>Languages</h3>
+      <p>C++ | Python | C# | HLSL</p>
 
-    <h4>Facilities & Leveling Progression</h4>
-    <p>
-      <img src="assets/Facilities.png" alt="Screenshot of facility purchasing from NUTMEG!" class="media">
-      Working closely with our designer and director, I implemented the facilities purchasing system, where players unlock 
-      more slots as they level up their stadium. Players can buy levels and facilities once per week, with a tier-up 
-      available every 5 levels, between seasons. This created a nice sense of progression tied to the core game loop.
-    </p>
-  </div>
+      <h3>Engines / Frameworks</h3>
+      <p>Unity | Unreal 5 | Custom In-House Engines (Play3D) | Playbuffer</p>
 
-    <div class="card fade">
-    <h3><a href="https://www.sumo-digital.com/sumo-digital-academy-create-a-halftime-hit-for-sheffield-wednesday-football-club/">Snake Party</a></h3>
-     <img src="assets/snake.png" alt="Screenshot from Snake Party" class="media">
-      <p>
-      I developed gameplay systems for this multiplayer party game developed for Sheffield Wednesday's halftime events, using
-      <strong>Play3D</strong>, a custom in-house C++ engine.
-    </p>
-      <ul>
-      <li>Developed a juicy and satisfying orb-eating animation mechanic with easings and lerps</li>
-        <li> Implemented exciting orb loss animation </li>
-        <li> Created a suspenseful score reveal section with popping UI and audio, slowing down near the end for tension</li>
-        <li> Implemented gameplay logic, player interaction, scoring systems and  state-driven game flow</li>
-      </ul>
-  </div>
+      <h3>Tools</h3>
+      <p>Perforce | GitHub | Microsoft Azure DevOps | Miro | Confluence | RenderDoc | Vtune | PIX</p>
 
-  <!-- OTHER PROJECTS -->
-  <h2 class="fade">Game Jam Projects</h2>
-
-  <div class="card fade">
-    <h3><a href="https://rickylee.itch.io/goblin-quest">Goblin Quest</a></h3>
-    <p>
-      A cheeky goblin collecting and turn-based battler. Choose your path through the dungeon, fight goblins and collect rewards to buff your team.
-      Developed in 72 hours in a team for LudemDare 57. The theme was depths. I composed the battle music.
-    </p>
-  </div>
-</section>
-
-
-
-<!-- QA experience -->
-<section id="qa" class="content fade">
-  
- <h2 class="fade">QA Credits</h2>
-
-  <div class="card fade">
-    <h3><a href="https://store.steampowered.com/app/1622910/Still_Wakes_the_Deep/">Still Wakes The Deep & Oil Strike '75</a></h3>
-    <div class="image-row">
-      <img src="assets/swtd.png" alt="Still Wakes The Deep QA">
-      <img src="assets/oilstrike.png" alt="Oil Strike 75 QA">
+      <h3>Fields</h3>
+      <p>Gameplay | Tools | UI Systems | Engine | Optimisation</p>
     </div>
-    <p>
-      Tested areas of gameplay, identifying bugs and crashes and reporting them in Azure DevOps with clear repro steps, recreatability and severity.
-    </p>
-    <p>I enjoyed messing around and trying to break the game, I found a particular soft-lock caused by skipping a check point flag in Oil Strike '75</p>
-  </div>
+  </section>
 
-</section>
-  
-  
-<!-- CONTACT -->
-<section id="contact" class="content fade">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:adittyapun11@gmail.com">adittyapun11@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/AdiPun">github.com/AdiPun</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/adipun">linkedin.com/in/adipun</a></p>
-  <a class="button" href="Adi_Pun_CV_GameProgrammer.pdf" download>Download CV</a>
-</section>
+  <!-- PROJECTS -->
+  <section id="projects" class="content">
+    <h2 class="fade">Featured Projects</h2>
+
+    <!-- NUTMEG -->
+    <article class="card fade">
+      <h3>
+        <a href="https://store.steampowered.com/app/3590560/NUTMEG_A_Nostalgic_Deckbuilding_Football_Manager/">
+          NUTMEG! - Commercial Release
+        </a>
+      </h3>
+
+      <img src="assets/nutmeg desk.jpg" alt="Screenshot of desk from NUTMEG!" class="media">
+
+      <p>
+        I worked as a Junior Programmer on <em>NUTMEG!</em>, a nostalgic football management game at Sumo Digital.
+        One of my favourite parts of this project was building systems that brought the retro TV aesthetic to life
+        while making life easier for our writers and artists:
+      </p>
+
+      <h4>CRT TV Shader & Teletext System</h4>
+
+      <img src="assets/CRT.gif" alt="Gif of CRT from NUTMEG!" class="media">
+
+      <p>
+        I created a custom CRT shader in HLSL featuring chromatic aberration, animated scanlines, vignette, and pixelation.
+        The goal was to nail that nostalgic 80s feel and really immerse players in the retro atmosphere.
+      </p>
+
+      <p>
+        I built a teletext rendering system that read actual TTI files and emulated them on surface materials.
+        To keep memory usage down, I designed the system to create one template per style and dynamically overwrite it
+        rather than storing multiple instances that we'd only see once.
+      </p>
+
+      <img src="assets/ScoreFlip.gif" alt="Gif of score clock from NUTMEG!" class="media">
+
+      <p>
+        I also implemented offscreen texture rendering for the flip-score clocks, which drew the correct number as the
+        animation completed. I used the offscreen texture to draw custom team colours on the clocks.
+      </p>
+
+      <h4>Python News Article Tool</h4>
+
+      <img src="assets/python tool.jpeg" alt="Screenshot of python news article tool from NUTMEG!" class="media">
+
+      <p>
+        I developed a Python tool using Tkinter to help our professional writers create in-game news articles quickly
+        and efficiently.
+      </p>
+
+      <h4>Dynamic Match Highlights System</h4>
+
+      <img src="assets/hat trick.jpeg" alt="Screenshot of teletext from NUTMEG!" class="media">
+
+      <p>
+        Using std::format, I created an algorithm that analysed weekly match results and intelligently categorised them.
+      </p>
+
+      <h4>Data-Driven Stadium Leveling System</h4>
+
+      <img src="assets/stadium.png" alt="Screenshot of stadium from NUTMEG!" class="media">
+
+      <p>
+        I built a stadium upgrade system where stands and facilities change as the player levels up.
+      </p>
+
+      <h4>Stadium Preview Tool (ImGui)</h4>
+
+      <img src="assets/imgui tool.jpeg" alt="Screenshot of facility preview ImGui tool from NUTMEG!" class="media">
+
+      <h4>Facilities & Leveling Progression</h4>
+
+      <img src="assets/Facilities.png" alt="Screenshot of facility purchasing from NUTMEG!" class="media">
+    </article>
+
+    <!-- SNAKE PARTY -->
+    <article class="card fade">
+      <h3>
+        <a href="https://www.sumo-digital.com/sumo-digital-academy-create-a-halftime-hit-for-sheffield-wednesday-football-club/">
+          Snake Party
+        </a>
+      </h3>
+
+      <img src="assets/snake.png" alt="Screenshot from Snake Party" class="media">
+
+      <p>
+        I developed gameplay systems for this multiplayer party game developed for Sheffield Wednesday's halftime events,
+        using <strong>Play3D</strong>, a custom in-house C++ engine.
+      </p>
+
+      <ul>
+        <li>Developed a juicy and satisfying orb-eating animation mechanic</li>
+        <li>Implemented exciting orb loss animation</li>
+        <li>Created suspenseful score reveal UI</li>
+        <li>Implemented gameplay logic and state-driven game flow</li>
+      </ul>
+    </article>
+
+    <h2 class="fade">Game Jam Projects</h2>
+
+    <article class="card fade">
+      <h3><a href="https://rickylee.itch.io/goblin-quest">Goblin Quest</a></h3>
+      <p>
+        A cheeky goblin collecting and turn-based battler developed in 72 hours for Ludum Dare 57.
+      </p>
+    </article>
+  </section>
+
+  <!-- QA -->
+  <section id="qa" class="content fade">
+    <h2>QA Credits</h2>
+
+    <div class="card">
+      <h3>
+        <a href="https://store.steampowered.com/app/1622910/Still_Wakes_the_Deep/">
+          Still Wakes The Deep & Oil Strike '75
+        </a>
+      </h3>
+
+      <div class="image-row">
+        <img src="assets/swtd.png" alt="Still Wakes The Deep QA">
+        <img src="assets/oilstrike.png" alt="Oil Strike 75 QA">
+      </div>
+
+      <p>
+        Tested gameplay areas, identifying bugs and crashes and reporting them in Azure DevOps with clear repro steps.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="content fade">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:adittyapun11@gmail.com">adittyapun11@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/AdiPun">github.com/AdiPun</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/adipun">linkedin.com/in/adipun</a></p>
+
+    <a class="button" href="Adi_Pun_CV_GameProgrammer.pdf" download>Download CV</a>
+  </section>
 
 </main>
-
 
 </body>
 </html>
