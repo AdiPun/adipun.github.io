@@ -138,8 +138,3 @@ main {
   object-fit: cover;
   border-radius: 8px;
 }
-
-h3, h4, .tech {
-  font-family: 'JetBrains Mono', monospace;
-  letter-spacing: -0.3px;
-}
