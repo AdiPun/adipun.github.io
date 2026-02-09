@@ -1,19 +1,34 @@
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  background: #f1f5f9;
-  color: #111;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0e0f12;
+  color: #e5e7eb;
+  line-height: 1.6;
 }
+
 
 main {
-  background-color: #f8fafc;
-  padding: 4rem 2rem;
+  background:
+    linear-gradient(#0e0f12, #0e0f12),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.02),
+      rgba(255,255,255,0.02) 1px,
+      transparent 1px,
+      transparent 8px
+    );
+  padding: 5rem 2rem;
 }
 
+
 .header {
-  padding: 3rem;
-  background: linear-gradient(135deg, #111, #333);
-  color: white;
+  background: radial-gradient(
+    1200px circle at 20% 0%,
+    #1b1c20,
+    #0e0f12
+  );
+  color: #f9fafb;
+  padding: 2.5rem 3rem 0;
 }
 
 .nav {
@@ -23,22 +38,46 @@ main {
   font-weight: 600;
 }
 
-.nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 1.5rem;
+.logo {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
 }
 
+.nav a {
+  color: #d1d5db;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+
 .hero {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: white;
-  padding: 6rem 2rem;
+  padding: 6rem 2rem 7rem;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0.75rem auto;
+  color: #cbd5f5;
+  font-size: 1.05rem;
+}
+
+.hero-contact a {
+  color: #f9fafb;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .content {
@@ -48,13 +87,16 @@ main {
 }
 
 .card {
-  background: white;
-  color: #222;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  background: #15161a;
+  color: #e5e7eb;
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
+  border-radius: 16px;
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.03);
 }
+
 
 .media {
   width: 100%;
@@ -95,4 +137,9 @@ main {
   width: 50%;
   object-fit: cover;
   border-radius: 8px;
+}
+
+h3, h4, .tech {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.3px;
 }
